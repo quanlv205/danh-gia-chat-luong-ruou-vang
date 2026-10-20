@@ -1,0 +1,15 @@
+﻿Thuộc tính,Kiểu,Đơn vị,Ý nghĩa
+fixed acidity,số thực,g/dm³ (tartaric),Độ axit cố định (axit không bay hơi)
+volatile acidity,số thực,g/dm³ (acetic),Độ axit bay hơi; cao gây mùi giấm
+citric acid,số thực,g/dm³,"Axit citric, tạo vị tươi"
+residual sugar,số thực,g/dm³,Đường còn lại sau lên men
+chlorides,số thực,g/dm³ (NaCl),Hàm lượng muối
+free sulfur dioxide,số thực,mg/dm³,"SO2 tự do, chống oxy hóa/vi khuẩn"
+total sulfur dioxide,số thực,mg/dm³,Tổng SO2 (tự do + liên kết)
+density,số thực,g/cm³,"Khối lượng riêng, phụ thuộc cồn và đường"
+pH,số thực,-,Độ chua/kiềm
+sulphates,số thực,g/dm³ (K2SO4),"Muối sunfat, phụ gia bảo quản"
+alcohol,số thực,% thể tích,Nồng độ cồn
+type,nhị phân (mã hóa),"0 = đỏ, 1 = trắng",Loại rượu (chỉ có khi gộp hai tập)
+quality,số nguyên 0-10,điểm,Điểm cảm quan do chuyên gia chấm (nhãn gốc)
+label,nhãn lớp,0/1/2,"Nhãn huấn luyện: 0 = thấp (<=5), 1 = TB (6), 2 = cao (>=7)"

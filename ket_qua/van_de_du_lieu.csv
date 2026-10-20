@@ -1,0 +1,6 @@
+﻿Vấn đề,Định lượng,Xử lý,Lý do
+Giá trị thiếu,0 ô,Không cần xử lý,Không có/ít nên loại bỏ không mất thông tin đáng kể
+Bản ghi trùng lặp,1177 dòng (18.1%),Loại bỏ (drop_duplicates) TRƯỚC khi chia tập,"Tránh cùng một mẫu nằm ở cả train và test -> rò rỉ, điểm test cao giả"
+Ngoại lai,"1989 giá trị; nhiều nhất: citric acid (509), volatile acidity (377), fixed acidity (357)",Giữ nguyên,Mô hình cây chia theo ngưỡng nên không nhạy với giá trị cực đoan; đây là giá trị đo thật
+Mất cân bằng lớp,"điểm 6 có 2836 mẫu, điểm 9 chỉ 5 mẫu (tỉ lệ 567:1)",Gộp nhãn 3 mức + dùng F1 macro + thử class_weight,"Các điểm 3, 4, 8, 9 quá ít mẫu để học; F1 macro không bị lớp đông lấn át"
+Rò rỉ dữ liệu,Cột quality là nguồn của nhãn,Loại quality và label khỏi X; chia tập trước khi biến đổi,Nếu giữ quality trong X thì mô hình 'biết' đáp án
