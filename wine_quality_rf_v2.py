@@ -2,21 +2,10 @@
 Đánh giá chất lượng rượu vang dựa trên thành phần hóa lý
 Bootstrap - Bagging - Random Forest - Extra Trees (lỗi OOB)
 
-PHIÊN BẢN 2 - bám sát bộ tiêu chí chấm của học phần:
-  BT1: từ điển dữ liệu, thống kê, EDA, định lượng & xử lý vấn đề dữ liệu, chia tập đúng cách
-  BT2: baseline, Pipeline (không rò rỉ), cross-validation (TB ± SD), test chỉ dùng đánh giá cuối,
-       ma trận nhầm lẫn, phân tích lỗi, so sánh train/validation (quá khớp)
-  BT3: ablation (đóng góp từng thay đổi), đặc trưng mới, RandomizedSearchCV bằng CV,
-       đường cong học tập, độ ổn định qua nhiều lần chạy, so sánh trước/sau cải tiến
-  Kết thúc: chạy lại được, cố định seed, lưu kết quả và mô hình
-
 Cách chạy:
     pip install -r requirements.txt
     python wine_quality_rf_v2.py            # gộp vang đỏ + trắng (mặc định)
-    python wine_quality_rf_v2.py red        # chỉ vang đỏ   (tùy chọn)
-    python wine_quality_rf_v2.py white      # chỉ vang trắng (tùy chọn)
-    FAST=1 python wine_quality_rf_v2.py     # chạy nhanh (ít cây, ít fold) để kiểm tra lỗi
-
+  
 LƯU Ý PHƯƠNG PHÁP:
   * Chia train/test TRƯỚC mọi phép biến đổi phụ thuộc dữ liệu. Mọi phép biến đổi nằm trong Pipeline
     nên chỉ được fit trên tập huấn luyện (trong từng fold khi cross-validation).
