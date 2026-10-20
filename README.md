@@ -9,7 +9,6 @@ với hai mô hình cơ sở (lớp đa số, Logistic Regression); khảo sát 
 ```bash
 pip install -r requirements.txt
 python wine_quality_rf_v2.py            # gộp vang đỏ + trắng (cấu hình dùng trong báo cáo)
-FAST=1 python wine_quality_rf_v2.py     # chạy nhanh để kiểm tra lỗi, KHÔNG dùng số liệu này
 ```
 
 - Dữ liệu: nếu có sẵn `winequality-red.csv`, `winequality-white.csv` cùng thư mục thì đọc file đó,
@@ -46,14 +45,4 @@ FAST=1 python wine_quality_rf_v2.py     # chạy nhanh để kiểm tra lỗi, K
 | `01_…` đến `12_…` (png) | Các hình dùng trong báo cáo |
 | `mo_hinh_cuoi.joblib` | Mô hình cuối đã huấn luyện |
 
-## Phân công và nhật ký đóng góp
 
-| Thành viên | Phần phụ trách | Minh chứng (commit / nhật ký) |
-|---|---|---|
-| … | … | … |
-| … | … | … |
-
-## Phạm vi sử dụng công cụ AI
-
-(Ghi rõ đã dùng công cụ AI tạo sinh cho những phần nào: ví dụ hỗ trợ viết khung mã nguồn và soạn thảo báo cáo;
-phần nào do nhóm tự thực hiện/chỉnh sửa. Mỗi thành viên phải giải thích được toàn bộ mã nguồn và nội dung đã nộp.)
